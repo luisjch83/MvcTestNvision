@@ -1,0 +1,68 @@
+﻿@model MvcTestNvision.Models.DB.Person
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Person form</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="AddOrEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdPerson" />
+            <div class="form-group">
+                <label asp-for="Titulo" class="control-label"></label>
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label asp-for="Nombre" class="control-label"></label>
+                    <input type="text" asp-for="Nombre" class="form-control" />
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group col-md-6">
+                    <label asp-for="Apellido" class="control-label"></label>
+                    <input type="text" asp-for="Apellido" class="form-control" />
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefono" class="control-label"></label>
+                <input type="number" asp-for="Telefono" class="form-control" />
+                <span asp-validation-for="Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Direccion" class="control-label"></label>
+                <input asp-for="Direccion" class="form-control" />
+                <span asp-validation-for="Direccion" class="text-danger"></span>
+            </div>
+          
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <input type="submit" value="Submit" class="btn btn-primary btn-block" />
+                </div>
+                <div class="form-group col-md-2">
+                    <input type="submit" name="SaveJson" class="btn btn-primary btn-block" value="Get Json"
+                           formaction="SaveJson" formmethod="post" />
+                </div>
+                <div class="form-group col-md-2">
+                    <input type="submit" name="SaveXml" class="btn btn-primary btn-block" value="Get Xml"
+                           formaction="SaveXml" formmethod="post" />
+                </div>
+                <div class="form-group col-md-2">                    
+                    <input type="reset" value="clear" class="btn btn-primary btn-block" id="btnClear" />
+                </div>
+                <div class="form-group col-md-3">
+                    <a asp-action="Index" class="btn btn-secondary btn-block"><i class="fa fa-table"></i> Back to List</a>
+                </div>
+            </div>
+</form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

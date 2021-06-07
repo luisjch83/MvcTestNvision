@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcTestNvision", "MvcTestNvision.csproj", "{DBDBAD78-6C08-4848-B58F-9465D38669FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBDBAD78-6C08-4848-B58F-9465D38669FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBDBAD78-6C08-4848-B58F-9465D38669FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBDBAD78-6C08-4848-B58F-9465D38669FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBDBAD78-6C08-4848-B58F-9465D38669FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4F92854-B072-46F7-9663-A0984AA6BB8F}
+	EndGlobalSection
+EndGlobal
