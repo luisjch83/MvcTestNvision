@@ -10,8 +10,7 @@ namespace MvcTestNvision.Models.DB
     public partial class Person
     {
         public int IdPerson { get; set; }
-        [Required(ErrorMessage = "This field is required.")]
-        [RegularExpression(@"Mr|Ms|MR|MS|ms|mr", ErrorMessage = "The title must be Mr or Ms")]
+        [Required(ErrorMessage = "This field is required.")]       
         [DisplayName("Titulo")]
         public string Titulo { get; set; }
 
